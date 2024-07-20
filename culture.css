@@ -1,0 +1,103 @@
+/* Reset default styles */
+* {
+    background-image: url("assets/bg2.jpg");
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #121212;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #080808;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Slideshow styles */
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    margin-top: 20px; /* Adjust as needed */
+}
+
+.tradition {
+    display: none;
+    text-align: center; /* Center align content */
+}
+
+.fade {
+    animation: fadeEffect 1.5s ease-in-out forwards;
+}
+
+@keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.tradition img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.tradition h3 {
+    margin: 10px 0;
+    font-size: 1.4em;
+    color: #333;
+}
+
+.tradition p {
+    font-size: 1em;
+    color: #666;
+    text-align: justify;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    .tradition {
+        text-align: left; /* Adjust for smaller screens */
+    }
+}

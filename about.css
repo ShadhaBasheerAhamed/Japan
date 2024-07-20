@@ -1,0 +1,134 @@
+/* Reset default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f2f2f2;
+    background-image: url("assets/bg2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Header styles */
+header {
+    /* background-color: #333; */
+    color: #fff;
+    padding: 10px 0;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #030303;
+    content: "";
+    transition: all 0.3s ease-in-out;
+}
+
+.hamburger::before,
+.hamburger::after {
+    position: absolute;
+}
+
+.hamburger::before {
+    top: -8px;
+}
+
+.hamburger::after {
+    bottom: -8px;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #030303;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+/* Container for content */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    /* background-color: #fff; */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Ensure content does not overflow */
+    position: relative; /* Ensure positioning for slides */
+}
+
+/* About sections */
+.about-sections {
+    display: flex;
+    width: 100%;
+    transition: transform 0.5s ease; /* Smooth transition for sliding */
+    justify-content: flex-start; /* Align slides to the start */
+    overflow: hidden; /* Hide overflow of images */
+}
+
+.about-slide {
+    flex: 1 0 100%; /* Full width for each slide */
+    padding: 20px;
+    text-align: center;
+}
+
+.about-slide img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    display: block; /* Ensure images behave as blocks */
+    margin: 0 auto; /* Center align images */
+}
+
+.about-slide .slide-content {
+    padding: 20px 0;
+}
+
+.about-slide h3 {
+    margin: 10px 0;
+    font-size: 1.4em;
+    color: #333;
+}
+
+.about-slide p {
+    font-size: 1em;
+    color: #666;
+    text-align: justify;
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+    .about-sections {
+        width: 100%; /* Full width for larger screens */
+    }
+
+    .about-slide {
+        flex: 1 0 50%; /* Adjust size for larger screens */
+        margin: 10px;
+    }
+}

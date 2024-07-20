@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("assets/bg2.jpg");
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+header {
+    color: white;
+    padding: 15px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #030303;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+.shinchan-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.shinchan-gif {
+    width: 150px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.shinchan-info {
+    max-width: 600px;
+    text-align: left;
+}
+
+.quiz-container {
+    margin-top: 20px;
+}
+
+.quiz-question {
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.quiz-question img {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.quiz-question p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.quiz-option-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.quiz-option-container img {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.quiz-option {
+    font-size: 16px;
+}
+
+.submit-button,
+.shinchan-quiz button {
+    background-color: #4c9daf;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.submit-button:hover,
+.shinchan-quiz button:hover {
+    background-color: #4c9daf;
+}
+
+.congrats-popup {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    text-align: center;
+}
+
+.congrats-popup .shinchan-img {
+    width: 150px;
+    height: auto;
+}
+
+
+/* .user-engagement form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user-engagement input[type="email"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 300px;
+}
+
+.user-engagement button {
+    padding: 10px 20px;
+    background-color: #4c9daf;
+    color: white;
+    border: none;
+    border-radius: 5px;
+} */
